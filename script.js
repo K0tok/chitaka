@@ -89,15 +89,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Показ рекомендованных книг
     function showRecommendedBooks(books) {
-        // Просто показываем первые 4 книги как рекомендации
-        const recommendedBooks = books.slice(0, 4);
-        displayBooks(recommendedBooks, '.recommended-books');
+        // Показываем все книги как рекомендации
+        displayBooks(books, '.recommended-books');
     }
     
     // Показ популярных книг
     function showPopularBooks(books) {
         // Сортируем по рейтингу
-        const popularBooks = [...books].sort((a, b) => b.rating - a.rating).slice(0, 4);
+        const popularBooks = [...books].sort((a, b) => b.rating - a.rating);
         displayBooks(popularBooks, '.popular-books');
     }
     
@@ -139,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (container) {
             container.innerHTML = '';
             
-            genreBooks.slice(0, 4).forEach(item => {
+            genreBooks.forEach(item => {
                 const genreCard = document.createElement('div');
                 genreCard.className = 'genre-card';
                 genreCard.innerHTML = `
@@ -155,9 +154,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Рекомендации для профиля
     function showProfileRecommendations(books) {
-        // Просто показываем первые 3 книги как рекомендации
-        const recommendations = books.slice(0, 3);
-        displayBooks(recommendations, '.recommendations');
+        // Показываем все книги как рекомендации
+        displayBooks(books, '.recommendations');
     }
     
     // Отображение книг

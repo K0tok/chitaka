@@ -6,12 +6,12 @@ __pycache__/
 *.obj
 dist/
 build/
-target/
 *.class
-*.so
-*.dll
 *.exe
+*.dll
+*.so
 *.a
+*.out
 
 # Dependencies
 node_modules/
@@ -27,22 +27,18 @@ venv/
 *.swp
 *.swo
 
-# Editor/IDE files
+# Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
 # System files
 .DS_Store
 Thumbs.db
 
-# Testing and coverage
-.coverage
+# Coverage
 coverage/
 htmlcov/
-.pytest_cache/
-.mypy_cache/
+.coverage
 
 # Compressed files
 *.zip
@@ -67,10 +63,4 @@ htmlcov/
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-
-# Gradle
-.gradle/
-
-# Original rules preserved
-*.log
 ```
