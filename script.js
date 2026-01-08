@@ -1,7 +1,5 @@
-// JavaScript для сайта Читака
-
+// Мобильное меню
 document.addEventListener('DOMContentLoaded', function() {
-    // Мобильное меню
     const burgerMenu = document.querySelector('.burger-menu');
     const navMenu = document.querySelector('.nav-menu');
     
@@ -11,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Загрузка книг из JSON
+    // Загрузка книг
     let books = [];
     
     fetch('/data/books.json')
@@ -19,21 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             books = data;
             
-            // Если это страница авторизованной главной, показываем рекомендации
             if (window.location.pathname.includes('index-auth.html')) {
                 showRecommendedBooks(books);
                 showPopularBooks(books);
                 showBookOfTheDay(books);
                 showGenreCollection(books);
-            } else {
-                // Показываем популярные книги на главной
-                showPopularBooks(books);
-                showBookOfTheDay(books);
-                showGenreCollection(books);
-            }
-            
-            // Если это страница поиска или профиля, показываем соответствующие книги
-            if (window.location.pathname.includes('search.html')) {
+            } else if (window.location.pathname.includes('search.html')) {
                 handleSearch(books);
             } else if (window.location.pathname.includes('favorites.html')) {
                 showFavoriteBooks();
@@ -41,11 +30,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 showProfileRecommendations(books);
             } else if (window.location.pathname.includes('book.html')) {
                 showBookDetails(books);
+            } else {
+                showPopularBooks(books);
+                showBookOfTheDay(books);
+                showGenreCollection(books);
             }
         })
         .catch(error => {
             console.error('Ошибка загрузки книг:', error);
-            // В случае ошибки используем тестовые данные
             books = getTestBooks();
             
             if (window.location.pathname.includes('index-auth.html')) {
@@ -60,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     
-    // Обработчик поиска
+    // Поиск книг
     function handleSearch(books) {
         const searchInput = document.querySelector('.search-input');
         const searchButton = document.querySelector('.search-button');
@@ -89,20 +81,17 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Показ рекомендованных книг
     function showRecommendedBooks(books) {
-        // Показываем все книги как рекомендации
         displayBooks(books, '.recommended-books');
     }
     
     // Показ популярных книг
     function showPopularBooks(books) {
-        // Сортируем по рейтингу
         const popularBooks = [...books].sort((a, b) => b.rating - a.rating);
         displayBooks(popularBooks, '.popular-books');
     }
     
     // Книга дня
     function showBookOfTheDay(books) {
-        // Берем первую книгу как книгу дня (можно сделать случайной)
         const bookOfDay = books[0];
         const container = document.querySelector('.book-of-day-container');
         
@@ -124,13 +113,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Подборка по жанрам
     function showGenreCollection(books) {
-        // Получаем уникальные жанры
         const genres = [...new Set(books.map(book => book.genre))];
         const genreBooks = genres.map(genre => {
             const booksInGenre = books.filter(book => book.genre === genre);
             return {
                 genre: genre,
-                book: booksInGenre[0] // Берем первую книгу в жанре
+                book: booksInGenre[0]
             };
         });
         
@@ -154,7 +142,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Рекомендации для профиля
     function showProfileRecommendations(books) {
-        // Показываем все книги как рекомендации
         displayBooks(books, '.recommendations');
     }
     
@@ -186,14 +173,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             container.appendChild(bookCard);
             
-            // Добавляем обработчик для кнопки избранного
             const favoriteBtn = bookCard.querySelector('.favorite-btn');
             favoriteBtn.addEventListener('click', function(e) {
-                e.stopPropagation(); // Предотвращаем всплытие события, чтобы не открывалась страница книги
+                e.stopPropagation();
                 toggleFavorite(book.id, this);
             });
             
-            // Добавляем обработчик для клика по карточке книги
             bookCard.addEventListener('click', function() {
                 window.location.href = `/pages/book.html?id=${book.id}`;
             });
@@ -247,7 +232,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Показ деталей книги
     function showBookDetails(books) {
-        // Получаем ID книги из URL параметров
         const urlParams = new URLSearchParams(window.location.search);
         const bookId = parseInt(urlParams.get('id')) || 1;
         
@@ -274,7 +258,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             `;
             
-            // Добавляем обработчик для кнопки избранного
             const favoriteBtn = document.querySelector('.favorite-btn');
             if (favoriteBtn) {
                 favoriteBtn.addEventListener('click', function() {
@@ -284,7 +267,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Тестовые данные для отладки
+    // Тестовые данные
     function getTestBooks() {
         return [
             {
