@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Логотип</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="search.html">Поиск</a></li>
+                <li><a href="favorites.html">Избранное</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
+            <button class="burger-menu">☰</button>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="form-container">
+            <h1>Вход</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="form-button">Войти</button>
+            </form>
+            <a href="register.html" class="form-link">Нет аккаунта? Зарегистрируйтесь</a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Читака</p>
+    </footer>
+    
+    <script src="../script.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // В реальном приложении здесь была бы проверка данных
+            alert('Вход выполнен (в демонстрации без реальной авторизации)');
+            window.location.href = 'index-auth.html';
+        });
+    </script>
+</body>
+</html>
