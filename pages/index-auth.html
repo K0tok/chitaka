@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Читака - Каталог книг</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="/pages/index-auth.html" class="logo">Читака</a>
+      <ul class="nav-menu">
+        <li><a href="/pages/index-auth.html">Главная</a></li>
+        <li><a href="/pages/search.html">Поиск</a></li>
+        <li><a href="/pages/favorites.html">Избранное</a></li>
+        <li><a href="/pages/profile.html">Профиль</a></li>
+        <li><a href="#" class="auth-btn">Выйти</a></li>
+      </ul>
+      <div class="burger-menu">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Поиск книг по названию, автору или жанру...">
+    </div>
+
+    <section id="recommended-books">
+      <!-- Рекомендованные книги будут загружены через JS -->
+    </section>
+
+    <section id="book-of-day">
+      <!-- Книга дня будет загружена через JS -->
+    </section>
+
+    <section id="popular-books">
+      <!-- Популярные книги будут загружены через JS -->
+    </section>
+
+    <section id="genre-classics">
+      <!-- Подборка по жанрам будет загружена через JS -->
+    </section>
+
+    <section id="genre-fantasy">
+      <!-- Подборка по жанрам будет загружена через JS -->
+    </section>
+
+    <section id="genre-scifi">
+      <!-- Подборка по жанрам будет загружена через JS -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Читака. Проект студентов УрФУ</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
