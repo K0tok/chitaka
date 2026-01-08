@@ -466,7 +466,12 @@ footer {
     
     .book-of-day .book-cover {
         width: 100%;
-        height: 250px;
+        height: 180px;
+    }
+    
+    .book-cover-large {
+        width: 200px !important;
+        height: 300px !important;
     }
     
     .books-grid {
@@ -479,7 +484,7 @@ footer {
     }
     
     .book-cover {
-        height: 150px;
+        height: 100px;
     }
     
     /* Убираем описание книги в мобильной версии */
@@ -512,7 +517,7 @@ footer {
     }
     
     .book-cover {
-        height: 120px;
+        height: 80px;
     }
     
     .search-box {
@@ -550,5 +555,10 @@ footer {
     .book-cover .favorite-btn {
         font-size: 1.2rem;
         padding: 0.1rem;
+    }
+    
+    .book-cover-large {
+        width: 150px !important;
+        height: 220px !important;
     }
 }
