@@ -120,12 +120,6 @@ h2 {
     overflow-x: auto;
     padding-bottom: 1rem;
     scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.books-grid::-webkit-scrollbar {
-    display: none;
 }
 
 .genre-grid {
@@ -136,24 +130,12 @@ h2 {
     overflow-x: auto;
     padding-bottom: 1rem;
     scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.genre-grid::-webkit-scrollbar {
-    display: none;
 }
 
 .book-container {
     overflow-x: auto;
     padding-bottom: 1rem;
     scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.book-container::-webkit-scrollbar {
-    display: none;
 }
 
 .book-card {
@@ -320,12 +302,6 @@ h2 {
     overflow-x: auto;
     padding-bottom: 1rem;
     scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.genre-grid::-webkit-scrollbar {
-    display: none;
 }
 
 .genre-card {
