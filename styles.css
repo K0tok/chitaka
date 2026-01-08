@@ -31,6 +31,12 @@ header {
     font-weight: bold;
 }
 
+.logo img {
+    max-height: 40px;
+    height: auto;
+    width: auto;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -470,6 +476,24 @@ footer {
     .book-cover {
         height: 150px;
     }
+    
+    /* Убираем описание книги в мобильной версии */
+    .book-description {
+        display: none;
+    }
+    
+    /* Уменьшаем размер шрифта */
+    .book-title {
+        font-size: 0.9rem;
+    }
+    
+    .book-author {
+        font-size: 0.8rem;
+    }
+    
+    .book-info {
+        padding: 0.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -498,5 +522,28 @@ footer {
     .search-button {
         border-radius: 4px;
         padding: 0.75rem;
+    }
+    
+    /* Дополнительные улучшения для очень маленьких экранов */
+    .book-title {
+        font-size: 0.8rem;
+    }
+    
+    .book-author {
+        font-size: 0.7rem;
+    }
+    
+    .book-info {
+        padding: 0.25rem;
+    }
+    
+    .book-cover .rating {
+        font-size: 0.7rem;
+        padding: 0.1rem 0.3rem;
+    }
+    
+    .book-cover .favorite-btn {
+        font-size: 1.2rem;
+        padding: 0.1rem;
     }
 }
