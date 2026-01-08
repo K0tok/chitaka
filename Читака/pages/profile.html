@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Логотип</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="search.html">Поиск</a></li>
+                <li><a href="favorites.html">Избранное</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
+            <button class="burger-menu">☰</button>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Профиль</h1>
+        
+        <div class="profile-info">
+            <div class="profile-field">
+                <strong>Имя</strong>
+                <span id="profile-name">Имя</span>
+            </div>
+            <div class="profile-field">
+                <strong>Email</strong>
+                <span id="profile-email">Email</span>
+            </div>
+            <div class="profile-field">
+                <strong>Количество сохранённых книг</strong>
+                <span id="saved-books-count">0</span>
+            </div>
+        </div>
+        
+        <h2>Рекомендации</h2>
+        <div class="books-grid recommendations"></div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Читака</p>
+    </footer>
+    
+    <script src="../script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Обновляем количество сохраненных книг
+            const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+            document.getElementById('saved-books-count').textContent = favorites.length;
+            
+            // Устанавливаем тестовые данные для профиля
+            document.getElementById('profile-name').textContent = 'Иван Иванов';
+            document.getElementById('profile-email').textContent = 'ivan@example.com';
+        });
+    </script>
+</body>
+</html>
