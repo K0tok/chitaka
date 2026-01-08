@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поиск книг - Читака</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="/pages/index.html" class="logo">Читака</a>
+      <ul class="nav-menu">
+        <li><a href="/pages/index.html">Главная</a></li>
+        <li><a href="/pages/search.html">Поиск</a></li>
+        <li><a href="/pages/favorites.html">Избранное</a></li>
+        <li><a href="/pages/profile.html">Профиль</a></li>
+        <li><a href="#" class="auth-btn">Выйти</a></li>
+      </ul>
+      <div class="burger-menu">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Поиск книг по названию, автору или жанру...">
+    </div>
+    
+    <div class="search-results">
+      <!-- Результаты поиска будут загружены через JS -->
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Читака. Проект студентов УрФУ</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

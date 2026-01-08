@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход - Читака</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="/pages/index.html" class="logo">Читака</a>
+      <ul class="nav-menu">
+        <li><a href="/pages/index.html">Главная</a></li>
+        <li><a href="/pages/search.html">Поиск</a></li>
+        <li><a href="/pages/login.html" class="auth-btn">Войти</a></li>
+      </ul>
+      <div class="burger-menu">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h2 class="form-title">Вход</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">Пароль</label>
+          <input type="password" id="password" class="form-input" required>
+        </div>
+        <button type="submit" class="form-btn">Войти</button>
+        <div class="message"></div>
+      </form>
+      <div class="form-link">
+        <p>Нет аккаунта? <a href="/pages/register.html">Зарегистрироваться</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Читака. Проект студентов УрФУ</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
