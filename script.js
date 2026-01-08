@@ -175,14 +175,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="book-cover">
                     <img src="${book.cover}" alt="${book.title}">
                     <div class="rating">${book.rating}★</div>
+                    <button class="favorite-btn ${isFavorite ? 'active' : ''}" data-id="${book.id}">
+                        ${isFavorite ? '❤️' : '♡'}
+                    </button>
                 </div>
                 <div class="book-info">
                     <div class="book-title">${book.title}</div>
                     <div class="book-author">${book.author}</div>
                     <div class="book-description">${book.shortDescription}</div>
-                    <button class="favorite-btn ${isFavorite ? 'active' : ''}" data-id="${book.id}">
-                        ${isFavorite ? '❤️' : '♡'}
-                    </button>
                 </div>
             `;
             
@@ -190,8 +190,14 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Добавляем обработчик для кнопки избранного
             const favoriteBtn = bookCard.querySelector('.favorite-btn');
-            favoriteBtn.addEventListener('click', function() {
+            favoriteBtn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Предотвращаем всплытие события, чтобы не открывалась страница книги
                 toggleFavorite(book.id, this);
+            });
+            
+            // Добавляем обработчик для клика по карточке книги
+            bookCard.addEventListener('click', function() {
+                window.location.href = `/pages/book.html?id=${book.id}`;
             });
         });
     }
