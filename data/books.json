@@ -7,7 +7,7 @@
     "shortDescription": "Эпический роман о русском обществе в эпоху Наполеона",
     "genre": "Классика",
     "rating": 4.8,
-    "cover": "/images/books/book1.jpg"
+    "cover": "./images/books/book1.jpg"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "shortDescription": "Психологический роман о вине и искуплении",
     "genre": "Классика",
     "rating": 4.7,
-    "cover": "/images/books/book2.jpg"
+    "cover": "./images/books/book2.jpg"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "shortDescription": "Первая книга о юном волшебнике Гарри Поттере",
     "genre": "Фэнтези",
     "rating": 4.6,
-    "cover": "/images/books/book3.jpg"
+    "cover": "./images/books/book3.jpg"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "shortDescription": "Антиутопия о тоталитарном государстве",
     "genre": "Научная фантастика",
     "rating": 4.9,
-    "cover": "/images/books/book4.jpg"
+    "cover": "./images/books/book4.jpg"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "shortDescription": "Фантастический роман о любви и дьяволе в советской Москве",
     "genre": "Фантастика",
     "rating": 4.8,
-    "cover": "/images/books/book5.jpg"
+    "cover": "./images/books/book5.jpg"
   },
   {
     "id": 6,
@@ -57,6 +57,6 @@
     "shortDescription": "Философский роман о ценностях индивидуализма",
     "genre": "Философия",
     "rating": 4.5,
-    "cover": "/images/books/book6.jpg"
+    "cover": "./images/books/book6.jpg"
   }
 ]

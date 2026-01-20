@@ -7,7 +7,7 @@ let currentUser = JSON.parse(localStorage.getItem('currentUser')) || null;
 // Загрузка книг из JSON файла
 async function loadBooks() {
   try {
-    const response = await fetch('/data/books.json');
+    const response = await fetch('./data/books.json');
     books = await response.json();
     return books;
   } catch (error) {
@@ -22,7 +22,7 @@ async function loadBooks() {
         shortDescription: "Эпический роман о русском обществе в эпоху Наполеона",
         genre: "Классика",
         rating: 4.8,
-        cover: "/images/books/book1.jpg"
+        cover: "./images/books/book1.jpg"
       }
     ];
   }
@@ -205,7 +205,7 @@ function displayBooksSection(books, title, containerId) {
 function createBookCard(book) {
   return `
     <div class="book-card">
-      <img src="${book.cover}" alt="${book.title}" class="book-cover" onerror="this.src='/images/books/default.svg'">
+      <img src="${book.cover}" alt="${book.title}" class="book-cover" onerror="this.src='./images/books/default.svg'">
       <div class="book-info">
         <h3 class="book-title">${book.title}</h3>
         <p class="book-author">${book.author}</p>
@@ -228,7 +228,7 @@ function displayBookOfDay() {
     bookOfDayContainer.innerHTML = `
       <h2 class="section-title">Книга дня</h2>
       <div class="book-card">
-        <img src="${randomBook.cover}" alt="${randomBook.title}" class="book-cover" onerror="this.src='/images/books/default.svg'">
+        <img src="${randomBook.cover}" alt="${randomBook.title}" class="book-cover" onerror="this.src='./images/books/default.svg'">
         <div class="book-info">
           <h3 class="book-title">${randomBook.title}</h3>
           <p class="book-author">${randomBook.author}</p>
@@ -345,7 +345,7 @@ function createSearchResultCard(book) {
   return `
     <div class="book-card">
       <div style="display: flex;">
-        <img src="${book.cover}" alt="${book.title}" class="book-cover" style="width: 100px; height: 150px; object-fit: cover;" onerror="this.src='/images/books/default.svg'">
+        <img src="${book.cover}" alt="${book.title}" class="book-cover" style="width: 100px; height: 150px; object-fit: cover;" onerror="this.src='./images/books/default.svg'">
         <div class="book-info" style="flex: 1; padding: 1rem;">
           <h3 class="book-title">${book.title}</h3>
           <p class="book-author">${book.author}</p>
@@ -377,7 +377,7 @@ function displayBookDetail() {
   
   document.querySelector('main').innerHTML = `
     <div class="book-detail">
-      <img src="${book.cover}" alt="${book.title}" class="book-detail-cover" onerror="this.src='/images/books/default.svg'">
+      <img src="${book.cover}" alt="${book.title}" class="book-detail-cover" onerror="this.src='./images/books/default.svg'">
       <div class="book-detail-info">
         <h1 class="book-detail-title">${book.title}</h1>
         <p class="book-detail-author">${book.author}</p>
