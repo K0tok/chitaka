@@ -7,7 +7,7 @@
     "shortDescription": "История любви и выживания на фоне Гражданской войны в США.",
     "genre": "Исторический роман",
     "rating": 4.7,
-    "cover": "/images/books/1.png"
+    "cover": "/books/1.png"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "shortDescription": "История о чуде и сострадании на смертном блоке.",
     "genre": "Мистика / Драма",
     "rating": 4.9,
-    "cover": "/images/books/2.png"
+    "cover": "/books/2.png"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "shortDescription": "Полное собрание историй о великом сыщике Шерлоке Холмсе.",
     "genre": "Детектив",
     "rating": 4.8,
-    "cover": "/images/books/3.png"
+    "cover": "/books/3.png"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "shortDescription": "Эпическая история мести и справедливости.",
     "genre": "Приключенческий роман",
     "rating": 4.9,
-    "cover": "/images/books/4.png"
+    "cover": "/books/4.png"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "shortDescription": "История о жизни чернокожих прислуг в Америке 1960-х.",
     "genre": "Современная проза",
     "rating": 4.6,
-    "cover": "/images/books/5.png"
+    "cover": "/books/5.png"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "shortDescription": "Повесть о солдате, чьё имя не попало в списки.",
     "genre": "Военная проза",
     "rating": 4.7,
-    "cover": "/images/books/6.png"
+    "cover": "/books/6.png"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "shortDescription": "Завершение эпической битвы за Средиземье.",
     "genre": "Фэнтези",
     "rating": 5.0,
-    "cover": "/images/books/7.png"
+    "cover": "/books/7.png"
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "shortDescription": "Автобиографическая хроника жизни в ГУЛАГе.",
     "genre": "Мемуары",
     "rating": 4.8,
-    "cover": "/images/books/8.png"
+    "cover": "/books/8.png"
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "shortDescription": "Кульминация войны за Железный Трон в Вестеросе.",
     "genre": "Фэнтези",
     "rating": 4.9,
-    "cover": "/images/books/9.png"
+    "cover": "/books/9.png"
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@
     "shortDescription": "Добрые истории ветеринара из Йоркшира.",
     "genre": "Мемуары / Художественная нон-фикшн",
     "rating": 4.5,
-    "cover": "/images/books/10.png"
+    "cover": "/books/10.png"
   },
   {
     "id": 11,
@@ -107,7 +107,7 @@
     "shortDescription": "История о поиске смысла и внутренней опоры.",
     "genre": "Современная проза",
     "rating": 4.3,
-    "cover": "/images/books/11.png"
+    "cover": "/books/11.png"
   },
   {
     "id": 12,
@@ -117,7 +117,7 @@
     "shortDescription": "Подборка лучших расследований Шерлока Холмса.",
     "genre": "Детектив",
     "rating": 4.7,
-    "cover": "/images/books/12.png"
+    "cover": "/books/12.png"
   },
   {
     "id": 13,
@@ -127,7 +127,7 @@
     "shortDescription": "Мистический роман о втором шансе и предназначении.",
     "genre": "Современная проза / Мистика",
     "rating": 4.4,
-    "cover": "/images/books/13.png"
+    "cover": "/books/13.png"
   },
   {
     "id": 14,
@@ -137,7 +137,7 @@
     "shortDescription": "Эпическое фэнтези о войне за свободу и трон.",
     "genre": "Фэнтези",
     "rating": 4.8,
-    "cover": "/images/books/14.png"
+    "cover": "/books/14.png"
   },
   {
     "id": 15,
@@ -147,7 +147,7 @@
     "shortDescription": "Сага о мафиозной семье и цене власти.",
     "genre": "Криминальная драма",
     "rating": 4.9,
-    "cover": "/images/books/15.png"
+    "cover": "/books/15.png"
   },
   {
     "id": 16,
@@ -157,7 +157,7 @@
     "shortDescription": "Классический детектив «запертой комнаты».",
     "genre": "Детектив",
     "rating": 4.8,
-    "cover": "/images/books/16.png"
+    "cover": "/books/16.png"
   },
   {
     "id": 17,
@@ -167,7 +167,7 @@
     "shortDescription": "История о человеке, ставшем гением на короткое время.",
     "genre": "Научная фантастика / Драма",
     "rating": 4.9,
-    "cover": "/images/books/17.png"
+    "cover": "/books/17.png"
   },
   {
     "id": 18,
@@ -177,7 +177,7 @@
     "shortDescription": "Исторический роман о поваре в купеческом доме.",
     "genre": "Историческая проза",
     "rating": 4.6,
-    "cover": "/images/books/18.png"
+    "cover": "/books/18.png"
   },
   {
     "id": 19,
@@ -187,6 +187,6 @@
     "shortDescription": "Автобиографические рассказы о врачебной практике.",
     "genre": "Классика / Мемуары",
     "rating": 4.7,
-    "cover": "/images/books/19.png"
+    "cover": "/books/19.png"
   }
 ]
