@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Загрузка книг
     let books = [];
     
-    fetch('/data/books.json')
+    fetch('./data/books.json')
         .then(response => response.json())
         .then(data => {
             books = data;
